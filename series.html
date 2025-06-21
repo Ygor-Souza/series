@@ -1,0 +1,60 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Votação de Séries</title>
+  <style>
+    body {
+      padding: 20px;
+    }
+    .serie {
+      margin-bottom: 20px;
+    }
+    .serie img {
+      width: 120px;
+      margin-right: 15px;
+    }
+    .serie button {
+      padding: 6px 12px;
+    }
+    .votos {
+      margin-left: 10px;
+      font-weight: bold;
+    }
+  </style>
+  <script src="series.js"></script>
+</head>
+<body>
+  <h2>Qual sua série favorita?</h2>
+  <div id="series">
+    <div class="serie">
+      <img src="med.jpg" alt="Med">
+      <span>Chicago Med</span>
+      <button class="votar">Votar</button>
+      <span class="votos">0</span> votos
+    </div>
+    <div class="serie">
+      <img src="fire.jpg" alt="Fire">
+      <span>Chicago Fire</span>
+      <button class="votar">Votar</button>
+      <span class="votos">0</span> votos
+    </div>
+    <div class="serie">
+      <img src="pd.jpg" alt="PD">
+      <span>Chicago PD</span>
+      <button class="votar">Votar</button>
+      <span class="votos">0</span> votos
+    </div>
+  </div>
+  <button class="resetar">Resetar Votação</button>
+  <p>
+    Crie uma votação para que os usuários escolham entre 3 séries. Cada voto atualiza o contador na tela. Também deve haver um botão para resetar a votação.
+  </p>
+  <p>O que praticar:</p>
+  <ul>
+    <li>querySelectorAll para capturar os botões "Votar"</li>
+    <li>addEventListener para atualizar os contadores</li>
+    <li>textContent para manipular os votos</li>
+    <li>addEventListener no botão “Resetar” para zerar todos os contadores</li>
+  </ul>
+</body>
+</html>
